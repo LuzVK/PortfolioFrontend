@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luz Valdez Kao</title>
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/miportfoliostyle.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-static-top barra" role="navigation">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa">
+                    <img class="logo" src="https://fekouti.com/img/arg-prog.png" alt="Logo Argentina Programa">
+                </a>
+                <!--button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button-->
+
+                <!-- Inicia Menu -->
+                <div class="collapse navbar-collapse" id="navbarSections">
+                    <ul class="navbar-nav me-auto mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link navseccion" href="#acercade">Acerca de...</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navseccion" href="#">Experiencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navseccion">Educación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navseccion">Habilidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navseccion">Proyectos</a>
+                        </li>
+                    </ul>
+
+                    <!-- Boton LOGIN -->
+                    
+                    <button id="loginBtn" onclick="redirectToLogin()" class="btn btn-outline-light" type="submit">Login</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- JUMBOTRON -->
+    <section class="jumbotron">
+        <div class="container">
+            <h1 class="tituloprincipal">Luz Valdez Kao</h1>
+            <p class="desc">Mi Portfolio Web</p>
+        </div>
+    </section>
+
+    <!--ARTICULOS-->
+    <section class="main container">
+        <div class="row">
+            <section class="posts col-md-20">
+                <article class="post clearfix">
+                    <h2 class="post-title" id="acercade">Acerca de...</h2>
+                    <a href="#" class="thumb pull-left">
+                        <img class="img-thumbnail" src="https://i.pinimg.com/564x/5b/f0/81/5bf08135725ee5a1abeef62b456f3886.jpg" alt="foto de perfil">
+                    </a>
+                    <p class="post-contenido text-justify">
+                        Soy una estudiante avanzada de Ingeniería en Informática y busco realizar pasantías y prácticas profesionales para adquirir experiencia laboral. 
+                        Desarrolladora FullStack
+                    </p>
+                </article>
+            </section>
+        </div>
+    </section>
+
+    <section >
+        <label>Acerca de...</label>
+    </section>
+
+    <section id="experiencia">
+        <label>Experiencia</label>
+    </section>
+
+    <section id="educacion">
+        <label>Educación</label>
+    </section>
+
+    <section id="habilidades">
+        <label>Habilidades</label>
+    </section>
+
+    <section id="proyectos">
+        <label>Proyectos</label>
+    </section>
+
+
+    <!-- Bootstrap JS -->
+
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+        function redirectToLogin() {
+            window.location.href = "login.html";
+        }
+
+    </script>
+
+</body>
