@@ -1,0 +1,123 @@
+<section class="main container">
+  <!--HABILIDADES-->
+  <div class="row">
+    <section class="posts col-md-20">
+      <article class="post clearfix">
+        <h2 class="post-title" id="habilidades">HABILIDADES</h2>
+        <section id="skills" class="py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h2 class="mb-3">Hard Skills</h2>
+
+                <ul style="list-style:none;">
+                  <li *ngFor="let habH of habilidadesListH">
+                    {{ habH.habilidadH }}
+                    <div class="progress mb-3">
+                      <div class="progress-bar" role="progressbar" [style.width.%]="habH.porcentajeH"
+                        [attr.aria-valuenow]="habH.porcentajeH" aria-valuemin="0" aria-valuemax="100">{{ habH.porcentajeH }}%</div>
+                    </div>
+                  </li>
+                </ul>
+
+
+                <!--div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0"
+                    aria-valuemax="100">React</div>
+                </div>
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0"
+                    aria-valuemax="100">Bootstrap</div>
+                </div>
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 35%;" aria-valuenow="35" aria-valuemin="0"
+                    aria-valuemax="100">Angular</div>
+                </div>
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 87%;" aria-valuenow="87" aria-valuemin="0"
+                    aria-valuemax="100">HTML y CSS</div>
+                </div>
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0"
+                    aria-valuemax="100">Java</div>
+                </div>
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0"
+                    aria-valuemax="100">JavaScript</div>
+                </div>
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+                    aria-valuemax="100">C#</div>
+                </div>
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+                    aria-valuemax="100">Python</div>
+                </div>
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0"
+                    aria-valuemax="100">Linux</div>
+                </div-->
+              </div>
+
+              <div class="col-md-6">
+                <h2 class="mb-3">Soft Skills</h2>
+
+                <ul style="list-style:none;">
+                  <li *ngFor="let habS of habilidadesListS">
+                    {{ habS.habilidadS }}
+                    <div class="progress mb-3">
+                      <div class="progress-bar" role="progressbar" [style.width.%]="habS.porcentajeS"
+                        [attr.aria-valuenow]="habS.porcentajeS" aria-valuemin="0" aria-valuemax="100">{{ habS.porcentajeS }}%</div>
+                    </div>
+                  </li>
+                </ul>
+
+                <!--div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+                    aria-valuemax="100">Comunicación</div>
+                </div>
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+                    aria-valuemax="100">Trabajo en equipo
+                  </div>
+                </div>
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
+                    aria-valuemax="100">Liderazgo</div>
+                </div>
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0"
+                    aria-valuemax="100">Creatividad</div>
+                </div>
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 93%;" aria-valuenow="93" aria-valuemin="0"
+                    aria-valuemax="100">Adaptabilidad</div>
+                </div>
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 87%;" aria-valuenow="87" aria-valuemin="0"
+                    aria-valuemax="100">Resolución de
+                    problemas</div>
+                </div>
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0"
+                    aria-valuemax="100">Gestión del tiempo
+                  </div>
+                </div>
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
+                    aria-valuemax="100">Habilidades
+                    interpersonales</div>
+                </div>
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 87%;" aria-valuenow="87" aria-valuemin="0"
+                    aria-valuemax="100">Toma de decisiones
+                  </div>
+                </div-->
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </section>
+  </div>
+</section>

@@ -1,0 +1,250 @@
+<body>
+    <form [formGroup]="form" (ngSubmit)="onEnviar($event)">
+    <div class="container">
+        <!--box movil-->
+        <div class="message signup">
+            <!--div class="btn-wrapper">
+                <button class="button" id="signup">Ingresar</button>
+                <button class="button" id="login">No tengo cuenta</button>
+            </div-->
+            <p class="post-contenido text-center lead">
+                Bienvenido a mi portfolio web!
+                <br>
+                <br>
+                Inicia sesion para realizar cambios
+            </p>
+        </div>
+
+        <!--ingresar-->
+        <div class="form form--signup">
+            <div class="form--heading naranja">¡Bienvenido de nuevo!</div>
+            <form autocomplete="off">
+                <input type="text" formControlName="email" placeholder="Email">
+                <div *ngIf="Email?.errors && Email?.touched">
+                    <p *ngIf="Email?.hasError('required')" class="text-danger" style="font-size: 12px;">
+                        El email es requerido
+                    </p>
+                    <p *ngIf="Email?.hasError('email')" class="text-danger" style="font-size: 12px;">
+                        El formato del email debe ser válido
+                    </p>
+                </div>
+                <input type="password" formControlName="password" placeholder="Contraseña">
+                <div *ngIf="Password?.errors && Password?.touched">
+                    <p *ngIf="Password?.hasError('required')" class="text-danger" style="font-size: 12px;">
+                        La contraseña es requerida
+                    </p>
+                    <p *ngIf="Password?.hasError('minlength')" class="text-danger" style="font-size: 12px;">
+                        La contraseña debe tener 4 o más caracteres
+                    </p>
+                </div>
+                <br>
+                <button class="button" (click)="redirectToPortfolio()">Ingresar</button>
+            </form>
+        </div>
+
+        <!--crear cuenta>
+        <div class="form form--login">
+            <br>
+            <div class="form--heading naranja">¡Bienvenido!</div>
+
+            <p class="post-contenido text-justify lead">
+                Si aún no tienes una cuenta, no es necesario que la crees para ver el portfolio.
+                <br>
+                <br>
+                El inicio de sesión solo está disponible para aquellos que quieran editar los datos del portfolio.
+            </p-->
+            <!--form autocomplete="off">
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
+          <input type="password" placeholder="Password">
+          <button class="button">Login</button>
+        </form>
+        </div-->
+    </div>
+
+
+
+    <!--script>
+        src = "https://code.jquery.com/jquery-3.6.0.min.js"
+
+        $("#signup").click(function () {
+            $(".message").css("transform", "translateX(100%)");
+            if ($(".message").hasClass("login")) {
+                $(".message").removeClass("login");
+            }
+            $(".message").addClass("signup");
+        });
+
+        $("#login").click(function () {
+            $(".message").css("transform", "translateX(0)");
+            if ($(".message").hasClass("login")) {
+                $(".message").removeClass("signup");
+            }
+            $(".message").addClass("login");
+        });
+
+    </script-->
+
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400");
+        @import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+
+        body,
+        .message,
+        .form,
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: poppins !important;
+        }
+
+        body {
+            height: 100vh;
+            /*background: #e8e8e8;*/
+            font-family: "Source Sans Pro", sans-serif;
+            background-color: #afcee3;
+            /*background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0Tl0hqPv5NEX2CrqZBPiWiTo99z0gtGr-Ag&usqp=CAU');*/
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            width: 700px;
+            height: 400px;
+            background: white;
+            position: relative;
+            display: grid;
+            grid-template: 100% / 50% 50%;
+            box-shadow: 2px 2px 10px 0 rgba(51, 51, 51, 0.2);
+        }
+
+        .message {
+            position: absolute;
+            background: #0E0E7A;
+            width: 50%;
+            height: 100%;
+            transition: 0.5s all ease;
+            transform: translateX(100%);
+            z-index: 4;
+        }
+
+        .message:before {
+            position: absolute;
+            content: "";
+            width: 1px;
+            height: 70%;
+            background: #c3c3d8;
+            opacity: 0;
+            left: 0;
+            top: 15%;
+        }
+
+        .message .button {
+            margin: 5px 0;
+        }
+
+        .signup:before {
+            opacity: 0.3;
+            left: 0;
+        }
+
+        .login:before {
+            opacity: 0.3;
+            left: 100%;
+        }
+
+        .btn-wrapper {
+            width: 60%;
+        }
+
+        .form {
+            width: 100%;
+            height: 100%;
+        }
+
+        .form--heading {
+            font-size: 25px;
+            height: 50px;
+            color: black;
+            /*font-family: "Source Sans Pro", sans-serif;*/
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .form--signup {
+            border-right: 1px solid #999;
+        }
+
+        form {
+            width: 70%;
+        }
+
+        form>* {
+            margin: 10px;
+        }
+
+        form input {
+            width: 90%;
+            border: 0;
+            border-bottom: 1px solid #aaa;
+            font-size: 13px;
+            font-weight: 300;
+            color: #797a9e;
+            letter-spacing: 0.11em;
+        }
+
+        form input::placeholder {
+            color: #333;
+            font-size: 10px;
+        }
+
+        form input:focus {
+            outline: 0;
+            border-bottom: 1px solid rgba(128, 155, 206, 0.7);
+            transition: 0.6s all ease;
+        }
+
+        .button {
+            width: 100%;
+            height: 30px;
+            border: 0;
+            outline: 0;
+            color: #0E0E7A;
+            font-weight: bolder;
+            font-size: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            /*font-weight: 400;*/
+            position: relative;
+            z-index: 3;
+            background: #afcee3;
+            font-family: "Source Sans Pro", sans-serif;
+            cursor: pointer;
+        }
+
+        .naranja {
+            color: #FF9700;
+            font-size: 30px;
+        }
+
+        .naranjaback {
+            background-color: #FF9700;
+        }
+
+        .azul {
+            color: #0E0E7A;
+        }
+
+        .post-contenido {
+            /*font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+            font-family: poppins;
+            font-size: 18px;
+            font-weight: bolder;
+            color: #FF9700;
+            text-align: justify;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    </style>
+</form>
+</body>

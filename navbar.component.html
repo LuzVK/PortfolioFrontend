@@ -1,0 +1,75 @@
+<header>
+    <nav class="navbar navbar-expand-lg navbar-static-top barra" role="navigation">
+        <div class="container-fluid" style="padding: 0;">
+            <!--LOGO ARG PROGRAMA-->
+            <a class="navbar-brand" href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa">
+                <img style="margin-left: 10px;" class="logo" src="https://fekouti.com/img/arg-prog.png" alt="Logo Argentina Programa">
+            </a>
+
+            <!-- Inicia Menu -->
+            <div class="collapse navbar-collapse" id="navbarSections">
+                <ul class="navbar-nav me-auto mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link navseccion" href="#acercade">Acerca de...</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navseccion" href="#experiencia">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navseccion" href="#educacion">Educación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navseccion" href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navseccion" href="#idiomas">Idiomas</a>
+                    </li>
+                </ul>
+
+                <!-- Boton LOGIN -->
+
+                <button id="loginBtn" (click)="redirectToLogin()" class="btn btn-outline-light"
+                    type="submit">Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <style>
+        .navbar {
+            width: 100%;
+            margin-bottom: 0;
+        }
+
+        .logo {
+            max-width: 150px;
+        }
+
+        .barra {
+            background-color: #0E0E7A;
+            /*background-color: #C70039;*/
+        }
+
+        .navseccion {
+            font-weight: bold;
+            color: white;
+        }
+
+        .navseccion-activa:hover {
+            color: white;
+        }
+
+        .container-fluid {
+            padding: 0;
+        }
+
+        .btn-outline-light {
+            border-width: 2px;
+            font-weight: bold;
+        }
+
+        .btn {
+            margin-right: 10px;
+        }
+    </style>
+
+</header>

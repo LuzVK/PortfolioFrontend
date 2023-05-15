@@ -1,0 +1,214 @@
+{
+    "nombre": "LUZ VALDEZ KAO",
+    "descripcion": "Mi portfolio web",
+    "descAcercade": "Soy una estudiante avanzada de Ingeniería en Informática apasionada por la tecnología y el desarrollo de software. Actualmente, estoy buscando oportunidades de pasantías y prácticas profesionales para adquirir experiencia laboral y seguir creciendo en mi carrera. Soy una desarrolladora fullstack con habilidades en varias tecnologías, incluyendo React, Bootstrap, Angular, HTML, CSS, Java, JavaScript, C#, Python y Linux. Me encanta trabajar en proyectos desafiantes y enfrentar nuevos retos, lo que me ha permitido desarrollar habilidades de resolución de problemas y trabajo en equipo. Estoy siempre en busca de nuevas oportunidades para aplicar mis habilidades técnicas y aprender de otros profesionales. Además, tengo conocimientos en ciberseguridad. Me interesa aprender más acerca de la seguridad informática y aplicar mis habilidades para proteger sistemas y datos.",
+    "fotoperfil": "https://i.pinimg.com/564x/5b/f0/81/5bf08135725ee5a1abeef62b456f3886.jpg",
+    "experiencia": [
+        {
+            "puesto": "PRÁCTICA PROFESIONAL SUPERVISADA DE TÉCNICO INFORMÁTICO",
+            "empresa": "Litio Minera Argentina",
+            "lugarfecha": "Salta, Argentina (16/09/2021 – 03/11/2021)",
+            "descexp": "Durante mi práctica profesional en Litio Minera Argentina, fui parte del equipo de soporte técnico informático, encargado de brindar asistencia técnica a los empleados de la empresa. Durante este período, desarrollé habilidades de resolución de problemas y aprendí a trabajar en equipo en un entorno de trabajo profesional."
+        },
+        {
+            "puesto": "AUDITORÍA DEL VOTO ELECTRÓNICO EN ELECCIONES PROVINCIALES",
+            "empresa": "Universidad Católica de Salta - Tribunal electoral",
+            "lugarfecha": "Salta, Argentina (03/04/2023 – Actualidad)",
+            "descexp": "Actualmente, formo parte del equipo de auditoría del voto electrónico en las elecciones provinciales en la Universidad Católica de Salta. Mi trabajo consiste en analizar el software y hardware utilizados en el proceso de votación electrónica para garantizar la integridad y seguridad de las elecciones. Esta experiencia me ha permitido desarrollar habilidades en ciberseguridad y aprender sobre los sistemas de votación electrónica."
+        },
+        {
+            "puesto": "GANADORA DEL CONCURSO CTF DE CIBERSEGURIDAD",
+            "empresa": "Universidad Católica de Salta",
+            "lugarfecha": "Salta, Argentina (2022)",
+            "descexp": "En el año 2022, participé en el Concurso CTF de Ciberseguridad organizado por la Universidad Católica de Salta y fui seleccionada como ganadora. Este concurso me permitió poner en práctica mis habilidades en ciberseguridad para resolver desafíos relacionados con la seguridad informática."
+        }
+    ],
+    "educacion": [
+        {
+            "titulo": "CURSO DE CIBERSEGURIDAD",
+            "institucion": "Fundación Telefónica Movistar",
+            "lugarfecEd": "Salta, Argentina (06/10/2022 – 02/02/2023)"
+        },
+        {
+            "titulo": "SEGUNDA ETAPA ARGENTINA PROGRAMA",
+            "institucion": "Programa Nacional y Federal",
+            "lugarfecEd": "Salta, Argentina (18/10/2022 – Actualidad)"
+        },
+        {
+            "titulo": "CURSO DE REDES INFORMÁTICAS",
+            "institucion": "Fundación Telefónica Movistar",
+            "lugarfecEd": "Salta, Argentina (25/09/2022 – 06/10/2022)"
+        },
+        {
+            "titulo": "PRIMERA ETAPA ARGENTINA PROGRAMA",
+            "institucion": "Programa Nacional y Federal",
+            "lugarfecEd": "Salta, Argentina (10/06/2022 – 06/08/2022)"
+        },
+        {
+            "titulo": "INGENIERÍA EN INFORMÁTICA",
+            "institucion": "Universidad Católica de Salta",
+            "lugarfecEd": "Salta, Argentina (01/2019 – Actualidad)"
+        },
+        {
+            "titulo": "BACHILLER EN CIENCIAS NATURALES",
+            "institucion": "Colegio Belgrano",
+            "lugarfecEd": "Salta, Argentina (03/2013 – 12/2018)"
+        }
+    ],
+    "habilidadesH": [
+        {
+            "habilidadH": "React",
+            "porcentajeH": 20
+        },
+        {
+            "habilidadH": "Bootstrap",
+            "porcentajeH": 30
+        },
+        {
+            "habilidadH": "Angular",
+            "porcentajeH": 35
+        },
+        {
+            "habilidadH": "HTML y CSS",
+            "porcentajeH": 87
+        },
+        {
+            "habilidadH": "Java",
+            "porcentajeH": 65
+        },
+        {
+            "habilidadH": "JavaScript",
+            "porcentajeH": 50
+        },
+        {
+            "habilidadH": "C#",
+            "porcentajeH": 90
+        },
+        {
+            "habilidadH": "Python",
+            "porcentajeH": 85
+        },
+        {
+            "habilidadH": "Linux",
+            "porcentajeH": 45
+        }
+    ],
+    "habilidadesS": [
+        {
+            "habilidadS": "Comunicación",
+            "porcentajeS": 85
+        },
+        {
+            "habilidadS": "Trabajo en equipo",
+            "porcentajeS": 90
+        },
+        {
+            "habilidadS": "Liderazgo",
+            "porcentajeS": 75
+        },
+        {
+            "habilidadS": "Creatividad",
+            "porcentajeS": 65
+        },
+        {
+            "habilidadS": "Adaptabilidad",
+            "porcentajeS": 93
+        },
+        {
+            "habilidadS": "Resolución de problemas",
+            "porcentajeS": 87
+        },
+        {
+            "habilidadS": "Gestión del tiempo",
+            "porcentajeS": 55
+        },
+        {
+            "habilidadS": "Habilidades interpersonales",
+            "porcentajeS": 80
+        },
+        {
+            "habilidadS": "Toma de decisiones",
+            "porcentajeS": 87
+        }
+    ],
+    "idiomas": [
+        {
+            "idiNombre": "LANGUAGE STUDY PROGRAM FOR COMPATRIOT YOUTH",
+            "institucion": "National Taiwan Normal University",
+            "anio": "2022"
+        },
+        {
+            "idiNombre": "LANGUAGE STUDY PROGRAM FOR COMPATRIOT YOUTH",
+            "institucion": "National Open University Taiwan",
+            "anio": "2021",
+            "fechas": "28 Septiembre - 5 Noviembre"
+        },
+        {
+            "idiNombre": "LANGUAGE STUDY PROGRAM FOR COMPATRIOT YOUTH",
+            "institucion": "National Open University Taiwan",
+            "anio": "2021",
+            "fechas": "5 Julio - 13 Agosto"
+        },
+        {
+            "idiNombre": "HSK 1 (Chinese Proficiency Test)",
+            "anio": "2021"
+        },
+        {
+            "idiNombre": "LANGUAGE STUDY PROGRAM FOR COMPATRIOT YOUTH",
+            "institucion": "Tamkang University, Taipei, Taiwán, Overseas Community Affairs Council Republic of China",
+            "anio": "2020"
+        },
+        {
+            "idiNombre": "FIRST EXAM",
+            "institucion": "Cultural Británica de Salta",
+            "anio": "2017"
+        },
+        {
+            "idiNombre": "MICHIGAN EXAM ECCE",
+            "institucion": "ISICANA (Instituto Salteño de Intercambio Cultural Argentino Norteamericano)",
+            "anio": "2017"
+        },
+        {
+            "idiNombre": "GRADUADA DE 6TO AÑO",
+            "institucion": "ISICANA (Instituto Salteño de Intercambio Cultural Argentino Norteamericano)",
+            "anio": "2017"
+        },
+        {
+            "idiNombre": "PET (Preliminary English Test)",
+            "institucion": "Cultural Británica de Salta",
+            "anio": "2016"
+        },
+        {
+            "idiNombre": "KET (Key English Test)",
+            "institucion": "Cultural Británica de Salta",
+            "anio": "2014"
+        }
+    ],
+    "idiomasProg": [
+        {
+            "LANGUAGE": "ESPAÑOL",
+            "descidi": "Lengua materna",
+            "comprensionauditiva": 100,
+            "comprensionlectora": 100,
+            "produccionoral": 100,
+            "interaccionoral": 100,
+            "expresionescrita": 100
+        },
+        {
+            "LANGUAGE": "INGLÉS",
+            "comprensionauditiva": 90,
+            "comprensionlectora": 95,
+            "produccionoral": 90,
+            "interaccionoral": 90,
+            "expresionescrita": 95
+        },
+        {
+            "LANGUAGE": "CHINO",
+            "comprensionauditiva": 50,
+            "comprensionlectora": 30,
+            "produccionoral": 30,
+            "interaccionoral": 30,
+            "expresionescrita": 35
+        }
+    ]
+}

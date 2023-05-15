@@ -1,0 +1,280 @@
+<section class="main container">
+  <!--IDIOMAS-->
+  <div class="row">
+    <section class="posts col-md-20">
+      <article class="post clearfix">
+        <h2 class="post-title" id="idiomas">COMPETENCIAS DE IDIOMAS</h2>
+        <section id="languages" class="py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 border-right post-contenido text-justify lead">
+
+                <ul style="list-style:none;">
+                  <li *ngFor="let idi of idiomasList">
+                    <strong>{{idi.idiNombre}}</strong>
+                    <br>
+                    <small class="text-muted">{{idi.institucion}}</small>
+                    <br>
+                    <small class="text-muted">{{idi.anio}}</small>
+                    <br>
+                    <small class="text-muted">{{idi.fechas}}</small>
+                    <br>
+                    <br>
+                  </li>
+                </ul>
+
+
+                <!--strong>LANGUAGE STUDY PROGRAM FOR COMPATRIOT YOUTH</strong>
+                <br>
+                <small class="text-muted">National Taiwan Normal University</small>
+                <br>
+                <small class="text-muted">2022</small>
+                <br>
+                <br>
+
+                <strong>LANGUAGE STUDY PROGRAM FOR COMPATRIOT YOUTH</strong>
+                <br>
+                <small class="text-muted">National Open University Taiwan</small>
+                <br>
+                <small class="text-muted">2021</small>
+                <br>
+                <small class="text-muted">28 Septiembre - 5 Noviembre</small>
+                <br>
+                <br>
+
+                <strong>LANGUAGE STUDY PROGRAM FOR COMPATRIOT YOUTH</strong>
+                <br>
+                <small class="text-muted">National Open University Taiwan</small>
+                <br>
+                <small class="text-muted">2021</small>
+                <br>
+                <small class="text-muted">5 Julio - 13 Agosto</small>
+                <br>
+                <br>
+
+                <strong>HSK 1 (Chinese Proficiency Test)</strong>
+                <br>
+                <small class="text-muted">2021</small>
+                <br>
+                <br>
+
+                <strong>LANGUAGE STUDY PROGRAM FOR COMPATRIOT YOUTH</strong>
+                <br>
+                <small class="text-muted">Tamkang University, Taipei, Taiwán, Overseas Community
+                  Affairs Council Republic of China</small>
+                <br>
+                <small class="text-muted">2020</small>
+                <br>
+                <br>
+
+                <strong>FIRST EXAM</strong>
+                <br>
+                <small class="text-muted">Cultural Británica de Salta</small>
+                <br>
+                <small class="text-muted">2017</small>
+                <br>
+                <br>
+
+                <strong>MICHIGAN EXAM ECCE</strong>
+                <br>
+                <small class="text-muted">ISICANA (Instituto Salteño de Intercambio Cultural
+                  Argentino Norteamericano)</small>
+                <br>
+                <small class="text-muted">2017</small>
+                <br>
+                <br>
+
+                <strong>GRADUADA DE 6TO AÑO</strong>
+                <br>
+                <small class="text-muted">ISICANA (Instituto Salteño de Intercambio Cultural
+                  Argentino Norteamericano)</small>
+                <br>
+                <small class="text-muted">2017</small>
+                <br>
+                <br>
+
+                <strong>PET (Preliminary English Test)</strong>
+                <br>
+                <small class="text-muted">Cultural Británica de Salta</small>
+                <br>
+                <small class="text-muted">2016</small>
+                <br>
+                <br>
+
+                <strong>KET (Key English Test)</strong>
+                <br>
+                <small class="text-muted">Cultural Británica de Salta</small>
+                <br>
+                <small class="text-muted">2014</small>
+                <br>
+                <br-->
+
+              </div>
+
+              <div class="col-md-6 ">
+
+                <ul style="list-style:none;">
+                  <li *ngFor="let idiProg of idiProgList">
+                    <h3>{{idiProg.LANGUAGE}}</h3>
+                    <small class="text-muted">{{idiProg.descidi}}</small>
+                    <br>
+                    <br>
+
+                    <div class="progress mb-3">
+                      <div class="progress-bar" role="progressbar" [style.width.%]="idiProg.comprensionauditiva" [attr.aria-valuenow]="idiProg.comprensionauditiva"
+                        aria-valuemin="0" aria-valuemax="100">Comprensión auditiva
+                      </div>
+                    </div>
+
+                    <div class="progress mb-3">
+                      <div class="progress-bar" role="progressbar" [style.width.%]="idiProg.comprensionlectora" [attr.aria-valuenow]="idiProg.comprensionlectora"
+                        aria-valuemin="0" aria-valuemax="100">Comprensión lectora
+                      </div>
+                    </div>
+
+                    <div class="progress mb-3">
+                      <div class="progress-bar" role="progressbar" [style.width.%]="idiProg.produccionoral" [attr.aria-valuenow]="idiProg.produccionoral"
+                        aria-valuemin="0" aria-valuemax="100">Producción oral
+                      </div>
+                    </div>
+
+                    <div class="progress mb-3">
+                      <div class="progress-bar" role="progressbar" [style.width.%]="idiProg.interaccionoral" [attr.aria-valuenow]="idiProg.interaccionoral"
+                        aria-valuemin="0" aria-valuemax="100">Interacción oral
+                      </div>
+                    </div>
+
+                    <div class="progress mb-3">
+                      <div class="progress-bar" role="progressbar" [style.width.%]="idiProg.expresionescrita" [attr.aria-valuenow]="idiProg.expresionesscrita"
+                        aria-valuemin="0" aria-valuemax="100">Expresión escrita
+                      </div>
+                    </div>
+
+                    <br>
+                    <br>
+                    <br>
+
+                  </li>
+                </ul>
+
+                <!--h3>ESPAÑOL</h3>
+                <small class="text-muted">Lengua materna</small>
+                <br>
+                <br>
+
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">Comprensión
+                    auditiva
+                  </div>
+                </div>
+
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">Comprensión
+                    lectora
+                  </div>
+                </div>
+
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">Producción oral
+                  </div>
+                </div>
+
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">Interacción oral
+                  </div>
+                </div>
+
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">Expresión escrita
+                  </div>
+                </div>
+
+                <br>
+                <br>
+                <br>
+
+                <h3>INGLÉS</h3>
+                <br>
+
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+                    aria-valuemax="100">Comprensión
+                    auditiva
+                  </div>
+                </div>
+
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+                    aria-valuemax="100">Comprensión lectora
+                  </div>
+                </div>
+
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+                    aria-valuemax="100">Producción oral
+                  </div>
+                </div>
+
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+                    aria-valuemax="100">Interacción oral
+                  </div>
+                </div>
+
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+                    aria-valuemax="100">Expresión escrita
+                  </div>
+                </div>
+
+                <br>
+                <br>
+                <br>
+
+                <h3>CHINO</h3>
+                <br>
+
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0"
+                    aria-valuemax="100">Comprensión
+                    auditiva
+                  </div>
+                </div>
+
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0"
+                    aria-valuemax="100">Comprensión lectora
+                  </div>
+                </div>
+
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0"
+                    aria-valuemax="100">Producción oral
+                  </div>
+                </div>
+
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0"
+                    aria-valuemax="100">Interacción oral
+                  </div>
+                </div>
+
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 35%;" aria-valuenow="35" aria-valuemin="0"
+                    aria-valuemax="100">Expresión escrita
+                  </div>
+                </div-->
+
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </section>
+  </div>
+</section>
